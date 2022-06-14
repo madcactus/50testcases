@@ -1,0 +1,2549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite id="7303" name="Oleksandr Makaryshyn 50 Bug Reports" >
+<node_order><![CDATA[39]]></node_order>
+<details><![CDATA[<p>Test suite contains 50 test cases, which result in &nbsp;failure in a certain website functionality</p>
+]]></details> 
+
+<testcase internalid="7304" name="Checking the price list download feature (for a non-registered user)">
+	<node_order><![CDATA[1000]]></node_order>
+	<externalid><![CDATA[611]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Current test case verifies the possibility of price list downloading from&nbsp;https://radiodetali.com.ua/</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The site&nbsp;https://radiodetali.com.ua/ is loaded.</p>
+
+<p>User is not registered. No user is logged in.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>2.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;СКАЧАТЬ ПРАЙС ЛИСТ&quot; button in the header</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The price list in &quot;.xls&quot; file format is&nbsp;downloading</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Go to the downloaded file folder and open the file</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The file opens and contains the price list of the goods in stock at a current date</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="7327" name="Website registration with invalid data">
+	<node_order><![CDATA[1001]]></node_order>
+	<externalid><![CDATA[616]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Current test case checks the registration possibility while&nbsp;leaving mandatory fields blank except email</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The site&nbsp;https://radiodetali.com.ua/ is loaded.</p>
+
+<p>User is not registered. No user is logged in.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Регистрация&quot; button in the header&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The page is loaded as follows:</p>
+
+<p><img alt="" src="https://i.ibb.co/XYXYjYz/reg-start-page.png" /></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Fill in the &quot;Электронная почта&quot; field with the following: test@test.com</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The field accepted entered&nbsp;data</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Tick the Captcha checkbox and leave &quot;Пароль&quot;, &quot;Повторный пароль&quot;, &quot;Фамилия&quot;, &quot;Имя&quot;, &quot;Отчество&quot;, &quot;Телефон для связи&quot;, &quot;Город&quot; fileds blank.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The Captcha checkbox was verified</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Click on the button &quot;Зарегистрироваться&quot; below</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The button changed its colour to light-red on mouse hover. The page was refreshed and the message to fill all the mandatory fields marked with (*) appeared. The registration was not successful</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="7352" name="Checking the Advanced Search feature of the forum section of the website">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[619]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Current test case checks the&nbsp;functioning of the Advanced Search feature of the forum section of the website&nbsp;http://chip.biz.ua</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The website&nbsp;http://chip.biz.ua is loaded.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>5.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Форум&quot; button on the start page</p>
+
+<p><img alt="" src="https://i.ibb.co/TRY7ytw/chip-forum.png" /></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The dedicated page with the forum sections is loaded.</p>
+
+<p>The sections are:</p>
+
+<ul>
+	<li>Personal PC configurations</li>
+	<li>PCs and components</li>
+	<li>Servers and server equipment</li>
+	<li>Peripherals</li>
+	<li>Networking</li>
+	<li>Software</li>
+	<li>Surveillance cameras</li>
+	<li>Search field with the &quot;Go&quot; button</li>
+	<li>The Advanced Search button</li>
+	<li>Latest Messages section on the right</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Advanced Search&quot; button below the Search field</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The Advanced Search section appeared under the Search field.</p>
+
+<p>This section contains the following fields:</p>
+
+<ul>
+	<li>Search by author</li>
+	<li>Search by date</li>
+	<li>Search in Forum (with the main&nbsp;forum sections to select)</li>
+	<li>Keyword Search</li>
+	<li>Sort results by</li>
+	<li>Start Search button</li>
+</ul>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Type the &quot;cooler&quot; in the Keyword Search field</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The field accepted entered data</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Click on the Start Search button&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The button is highlighted on the mouse hover. The new page containing the search results appeared</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Scroll down the results to check whether each&nbsp;of them contains the word &quot;cooler&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Every search result contains the keyword &quot;cooler&quot;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="7409" name="Checking the URL validation in &quot;Аксесуари&quot; section (for non-registered user)">
+	<node_order><![CDATA[1003]]></node_order>
+	<externalid><![CDATA[632]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>The &quot;https://khmelnychynna-avto.ukravto.ua/&quot; website is being tested.</p>
+
+<p>Current test case verifies whether the URLs in&nbsp;&quot;Аксесуари&quot; section are correct.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The page https://khmelnychynna-avto.ukravto.ua/ is loaded.</p>
+
+<p>User is not registered. No user is logged in.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Аксесуари для автомобілів&quot; button in the footer.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The font colour of the button has changed to light-blue on mouse hover. The page entitled &quot;Аксесуари&quot; has been loaded.</p>
+
+<p><img alt="" src="https://i.ibb.co/61nCtgP/auto-accessories.png" /></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Smart&quot; button in the &quot;Аксесуари&quot; section.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The page containing the available accessories for the Smart is opened.&nbsp;</p>
+
+<p>The page consists of the following sections:</p>
+
+<ul>
+	<li>Зовнішні аксесуари</li>
+	<li>Внутрішні аксесуари</li>
+	<li>Чохли для зберігання запасних коліс</li>
+</ul>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="7413" name="Checking the functionality of &quot;Пошук по сайту&quot; field (for non-registered user)">
+	<node_order><![CDATA[1004]]></node_order>
+	<externalid><![CDATA[633]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Current test case verifies the functionality of the&nbsp;&quot;Пошук по сайту&quot; field.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The page https://khmelnychynna-avto.ukravto.ua/ is loaded.</p>
+
+<p>User is not registered.&nbsp;No user should be logged in.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Go to the footer and type &quot;Mercedes&quot; in the&nbsp;&quot;Пошук по сайту&quot; field.</p>
+
+<p><img alt="" src="https://i.ibb.co/0GXCmm5/website-search.png" /></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The &quot;Пошук по сайту&quot; field accepted entered data.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Click on the magnifier icon on the right to start a search.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The page with the search results has been opened.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Scroll down the results to check whether each&nbsp;of them contains the keyword &quot;Mercedes&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Every search result contains the keyword &quot;Mercedes&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Clear the search field and type &quot;ЗАЗ&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The &quot;Пошук по сайту&quot; field accepted entered data.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Click on the magnifier icon on the right to start a search.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The page with the search results has been opened.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Scroll down the results to check whether each&nbsp;of them contains the keyword &quot;ЗАЗ&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Every search result contains the keyword &quot;ЗАЗ&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="7450" name="Checking the Login functioning of the website (for registered user)">
+	<node_order><![CDATA[1005]]></node_order>
+	<externalid><![CDATA[641]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Current test case verifies functioning of the Login feature of the website&nbsp;http://steelhammer.com.ua/</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The page http://steelhammer.com.ua/ is loaded.</p>
+
+<p>The user has previously registered with the following credentials:</p>
+
+<p>Email: scrumpy@i.ua</p>
+
+<p>Password: testpassword</p>
+
+<p>No user is currently logged in.</p>
+
+<p>&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Вход&quot; button in the header to log in the system.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The Login page is loaded as follows:</p>
+
+<p><img alt="" src="https://i.ibb.co/mN8YPyN/login.png" /></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Fill the login credentials in the &quot;E-mail&quot; and &quot;Пароль:&quot; fields&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The fields accepted entered credentials</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Войти&quot; button on the right.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The start page for registered users is loaded:</p>
+
+<p><img alt="" src="https://i.ibb.co/w4Vf19r/start-logged.png" /></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="7455" name="Checking the &quot;Поиск&quot; field functioning (for non-registered user)">
+	<node_order><![CDATA[1006]]></node_order>
+	<externalid><![CDATA[642]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Current test case checks the&nbsp;&quot;Поиск&quot; field functioning of the&nbsp;http://steelhammer.com.ua/ website.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The page http://steelhammer.com.ua/ is loaded.</p>
+
+<p>User is not registered.&nbsp;No user should be logged in.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Поиск&quot; field and type the keyword &quot;гитара&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The field accepts entered data. The page is displayed as follows:</p>
+
+<p><img alt="" src="https://i.ibb.co/pKmtKfH/start-page.png" /></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Click on the magnifier button on the right to start search.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The page with the search results appeared.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Scroll down the results to check whether each&nbsp;of them contains the word &quot;гитара&quot;.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Every search result contains the keyword &quot;гитара&quot;.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="7460" name="Checking the &quot;Гарантия и возврат&quot; page functioning (for non-registered user)">
+	<node_order><![CDATA[1011]]></node_order>
+	<externalid><![CDATA[643]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Current test case verifies the presence of the information about the warranty and return conditions on the corresponging page of the&nbsp;https://electro-market.com.ua/ website.&nbsp;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The page https://electro-market.com.ua/ is loaded.</p>
+
+<p>User is not registered.&nbsp;No user should be logged in.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Гарантия и возврат&quot; page in the footer</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The button is highlighted in grey on mouse hover.</p>
+
+<p>The page with the&nbsp;warranty and return conditions is loaded.</p>
+
+<p>The content of the page corresponds to the requirement which&nbsp;is applied to the given page.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="7463" name="Checking the password recovery of the &quot;Смотрите также&quot; subsection of the &quot;Новости и обзоры&quot; section">
+	<node_order><![CDATA[1012]]></node_order>
+	<externalid><![CDATA[644]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Current test case checks the password recovery feature on the&nbsp;https://www.avtoradosti.com.ua/ website.</p>
+
+<p>The password recovery button is located in the &quot;Смотрите также&quot; subsection of the &quot;Новости и обзоры&quot; section.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user is registered.</p>
+
+<p>The page https://www.avtoradosti.com.ua/&nbsp;is loaded.</p>
+
+<p>Initially no user should be logged in.</p>
+
+<p>Click on the&nbsp;&quot;Новости и обзоры&quot; button in the header. The page is loaded as follows:<img alt="" src="https://i.ibb.co/fYqvBDc/nov-obzory.png" /></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Восстановить пароль&quot; hyperlink in the &quot;Смотрите также&quot; subsection.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The hyperlink changes to grey on mouse hover.</p>
+
+<p>The page is loaded.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Enter the email in the email field previously used for registration.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The field accepted entered data</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Восстановить пароль&quot; button below.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The button changes its color to light-green on mouse hover.</p>
+
+<p>The following message appears: &quot;На ваш почтовый ящик было отправлено письмо с параметрами доступа к своему личному кабинету.&quot;&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Check the email inbox messages for the password recovery message and follow the steps specified.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The message has been received, new password has been set.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Log in the system with newly created password.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Log in was successful, the system accepted new password.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="7503" name="Checking the incorrect email input when subscribing to the newsletter (for non-registered user)">
+	<node_order><![CDATA[1013]]></node_order>
+	<externalid><![CDATA[650]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Current test case checks if the system accepts incorrect email when subscribing to the newsletter on the&nbsp;https://www.mobilluck.com.ua/ website.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The page https://www.mobilluck.com.ua/&nbsp;is loaded.</p>
+
+<p>User is not registered.&nbsp;No user should be logged in.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Go to the footer of the page and enter the incorrectly written email: &quot;test@mailserver&quot; in the newsletter field &quot;Введите электронный адрес&quot;.</p>
+
+<p><img alt="" src="https://i.ibb.co/Cs6k3m5/newsletter.png" /></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The newsletter field accepted entered data.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Подписаться&quot; button</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>New pop-up window for subscription confirmation appeared:</p>
+
+<p><img alt="" src="https://i.ibb.co/ssxYbzR/pop-up.png" /></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Enter the &quot;Jack&quot; in the &quot;Имя&quot; field</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The &quot;Имя&quot; field accepted entered data.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Отправить&quot; button below to submit entered data.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The &quot;Отправить&quot; button turns to dark-blue on the mouse hover.</p>
+
+<p>The message with the incorrect email input appeared.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="7535" name="Checking the correct language of the &quot;Інформація&quot; section links">
+	<node_order><![CDATA[1014]]></node_order>
+	<externalid><![CDATA[653]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Current test case checks the correct website language of the links in the&nbsp;&quot;Інформація&quot; section.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The page https://omega.km.ua/&nbsp;is loaded.</p>
+
+<p>User is not registered.&nbsp;No user should be logged in.</p>
+
+<p>The default website language is Ukrainian.</p>
+
+<p>There is no option to change&nbsp;the language.</p>
+
+<p><img alt="" src="https://i.ibb.co/T1xDVPG/start-page.png" /></p>
+
+<p>&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Про нас&quot; hyperlink in the footer:</p>
+
+<p><img alt="" src="https://i.ibb.co/zhhM5ZC/bottom.png" /></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The hyperlink changes its color to white on mouse hover.</p>
+
+<p>The page &quot;Про нас&quot; displays in Ukrainian.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Repeat step 1 for the rest of the links:</p>
+
+<ul>
+	<li>Завантажити ПО</li>
+	<li>Наші проекти</li>
+	<li>Контакти</li>
+	<li>Зворотній зв&#39;язок</li>
+	<li>Мапа сайту</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>The hyperlinks&nbsp;change their&nbsp;color to white on mouse hover.</p>
+
+<p>All the corresponding pages display in Ukrainian.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="7891" name="Checking the left menu panel functionality (for a non-registered user)">
+	<node_order><![CDATA[1015]]></node_order>
+	<externalid><![CDATA[721]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Current test case checks the whether the left sliding panel contains the&nbsp;web camera links,&nbsp;collected by groups.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The page http://glazok.km.ua/ is loaded.</p>
+
+<p>User is not registered.&nbsp;No user should be logged in.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Click on the left menu panel button as marked below:</p>
+
+<p><img alt="" src="https://i.ibb.co/WyKPX0X/left-panel.png" /></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The panel slides to the right opening a list of web cameras grouped by city districts</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="7894" name="Checking the footer &quot;МЕНЮ&quot; links functionality (for a non-registered user)">
+	<node_order><![CDATA[1016]]></node_order>
+	<externalid><![CDATA[722]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Current test case verifies if all the &quot;МЕНЮ&quot; links are working properly.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The page https://specinstrument.ua/&nbsp;is loaded.</p>
+
+<p>User is not registered.&nbsp;No user should be logged in.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration>10.00</estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Go to the footer an click on the &quot;Оплата и доставка&quot; link.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The &quot;Оплата и доставка&quot; page opens:</p>
+
+<p><img alt="" src="https://i.ibb.co/J57NYYv/Oplata.png" /></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Гарантия&quot; link</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The &quot;Гарантия&quot; page opens as follows:</p>
+
+<p><img alt="" src="https://i.ibb.co/XSMZgM7/Warranty.png" /></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Статьи&quot; link</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The &quot;Статьи&quot; page opens as follows:</p>
+
+<p><img alt="" src="https://i.ibb.co/1TJcCKQ/articles.png" /></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>CLick on the &quot;Новости&quot; link&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The &quot;Новости&quot; page opens as follows:</p>
+
+<p><img alt="" src="https://i.ibb.co/d2DHTpS/news.png" /></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Личный кабинет&quot; link&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The &quot;Личный кабинет&quot; page opens as follows:</p>
+
+<p><img alt="" src="https://i.ibb.co/RTTM2fR/account-reg.png" /></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Click on the&nbsp;&quot;Помощь&quot; link</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The&nbsp;&quot;Помощь&quot; page opens as follows:</p>
+
+<p><img alt="" src="https://i.ibb.co/NyvT8n7/help.png" /></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Контакты&quot; link</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The &quot;Контакты&quot; page opens as follows:</p>
+
+<p><img alt="" src="https://i.ibb.co/xLpp854/contacts.png" /></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[8]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Вопрос / ответ&quot; link</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The &quot;Вопрос / ответ&quot; page opens as follows:</p>
+
+<p><img alt="" src="https://i.ibb.co/7C5y0Xz/FAQ.png" /></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[9]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Регистрация / авторизация&quot; link</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The &quot;Регистрация / авторизация&quot; page opens as follows:</p>
+
+<p><img alt="" src="https://i.ibb.co/q19KZzL/reg.png" /></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="8006" name="Incorrect email input while subscribing to newsletter">
+	<node_order><![CDATA[1017]]></node_order>
+	<externalid><![CDATA[743]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Current test case verifies whether it is possible to subscribe to newsletter entering incorrect email.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The page https://deshevshe.net.ua/&nbsp;is loaded.</p>
+
+<p>User is not registered.&nbsp;No user should be logged in.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Go to the &quot;Подписка на&nbsp;новые скидки и&nbsp;промокоды&quot;&nbsp;section in the footer and type the email: test@mailserver</p>
+
+<p><img alt="" src="https://i.ibb.co/5xvjwv1/subs.png" /></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The field accepted written data</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Подписаться&quot; button on the right</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The button changes its colour to light-yellow on mouse hover.</p>
+
+<p>The subscription was declined by the system as the email&nbsp;does not satisfy the address format requirements.&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="8010" name="Checking the &quot;Мобильный форум&quot; link functionality">
+	<node_order><![CDATA[1018]]></node_order>
+	<externalid><![CDATA[744]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Current test case verifies the &quot;Мобильный форум&quot; link functionality on the http://pc-center.com.ua/ website.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The page http://pc-center.com.ua/&nbsp;is loaded.</p>
+
+<p>User is not registered.&nbsp;No user should be logged in.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Мобильный форум&quot; link in the &quot;Компьютерный форум&quot; section.</p>
+
+<p><img alt="" src="https://i.ibb.co/sV3YdpX/mob-forum.png" /></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The link changes its colour from blue to red on mouse hover.</p>
+
+<p>The page &quot;Мобильный форум&quot; is opened containing the sections devoted to the cell phones topic.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="8013" name="Checking the &quot;Пошта&quot; button functionality">
+	<node_order><![CDATA[1019]]></node_order>
+	<externalid><![CDATA[745]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Current test case verifies the &quot;Пошта&quot; button functionality on the https://trolley.org.ua/ website.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The page https://trolley.org.ua/&nbsp;is loaded.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Пошта&quot; button&nbsp;in the header:</p>
+
+<p><img alt="" src="https://i.ibb.co/Y0t50yc/start-page-mail.png" /></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The letters receive a black outline on mouse hover.</p>
+
+<p>The page&nbsp;http://webmail.trolley.org.ua/ opens in new window and contains a webmail service.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="8016" name="Checking the &quot;Графіки&quot; button functionality">
+	<node_order><![CDATA[1020]]></node_order>
+	<externalid><![CDATA[746]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Current test case verifies the &quot;Графіки&quot; button functionality on the https://trolley.org.ua/ website.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The page https://trolley.org.ua/&nbsp;is loaded.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Графіки&quot; button&nbsp;in the header:</p>
+
+<p><img alt="" src="https://i.ibb.co/M1jJGPv/start-page-sched.png" /></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The letters receive a black outline on mouse hover.</p>
+
+<p>A &quot;rozklad.xls&quot; file from https://trolley.org.ua/docs/ automatically starts downloading. The file&nbsp;contains&nbsp;a trolley&nbsp;time schedule.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="8025" name="Checking the links from the &quot;Ресурси&quot; dropdown menu">
+	<node_order><![CDATA[1021]]></node_order>
+	<externalid><![CDATA[749]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Current test case checks the transition of the links from the &quot;Ресурси&quot; dropdown menu.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The page https://trolley.org.ua/&nbsp;is loaded</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Go to the header and hover on the &quot;Ресурси&quot; button</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>A dropdown menu should appear:</p>
+
+<p><img alt="" src="https://i.ibb.co/m5L9jYQ/resources.png" style="height:461px; width:639px" /></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Choose &quot;Депо &quot;Гречани&quot;&quot; from the menu</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The page with the information concerning&nbsp;&quot;Депо &quot;Гречани&quot;&quot; is displayed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Choose &quot;Хмельницька Міська Рада&quot; from the menu</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The page with the information concerning&nbsp;&quot;Хмельницька Міська Рада&quot; is displayed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Choose &quot;МКП Хмельницькводоканал&quot; from the menu</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The page with the information concerning &quot;МКП Хмельницькводоканал&quot; is displayed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Choose &quot;Теплокомуненерго&quot; from the menu</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The page with the information concerning &quot;Теплокомуненерго&quot; is displayed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Choose &quot;Південно-Західні тепломережі&quot; from the menu</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The page with the information concerning &quot;Південно-Західні тепломережі&quot; is displayed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>Choose &quot;ХКП Спецкомунтранс&quot; from the menu</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The page with the information concerning &quot;ХКП Спецкомунтранс&quot; is displayed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[8]]></step_number>
+	<actions><![CDATA[<p>Choose &quot;ПАТ Хмельницькгаз&quot; from the menu</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The page with the information concerning &quot;ХПАТ Хмельницькгаз&quot; is displayed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="8120" name="Checking the &quot;Пункти продажу квитків&quot; button functionality">
+	<node_order><![CDATA[1022]]></node_order>
+	<externalid><![CDATA[770]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Current test case verifies the &quot;Пункти продажу квитків&quot; button functionality on the https://trolley.org.ua/ website.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The page https://trolley.org.ua/&nbsp;is loaded</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Hover on the &quot;Інформація про діяльність&quot; button</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The letters receive a black outline. The &quot;Пункти продажу квитків&quot; button drops down.</p>
+
+<p><img alt="" src="https://i.ibb.co/QkRQB8q/ticket.png" /></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Пункти продажу квитків&quot; button</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The button turns into dark-blue on mouse hover and the&nbsp;letters receive black outline.</p>
+
+<p>A list of ticket sales points opens in new window.</p>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="8124" name="Checking the links from the &quot;Державні та інші сайти&quot; side section.">
+	<node_order><![CDATA[1023]]></node_order>
+	<externalid><![CDATA[771]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Current test case checks the transition of the links from the &quot;Державні та інші сайти&quot; side section of the https://trolley.org.ua/ website.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The page https://trolley.org.ua/&nbsp;is loaded</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Go to the &quot;Державні та інші сайти&quot;&nbsp;side section&nbsp;and click on the &quot;Президент України&quot; link</p>
+
+<p><img alt="" src="https://i.ibb.co/VwS82K2/start-page.png" /></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The start page of the &quot;Президент України&quot;&nbsp;website is displayed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Go to the &quot;Державні та інші сайти&quot;&nbsp;side section&nbsp;and click on the &quot;Верховна Рада України&quot; link</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The start page of the &quot;Верховна Рада України&quot;&nbsp;website is displayed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Go to the &quot;Державні та інші сайти&quot;&nbsp;side section&nbsp;and click on the &quot;Кабінет Міністрів України&quot; link</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The start page of the &quot;Кабінет Міністрів України&quot;&nbsp;website is displayed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Go to the &quot;Державні та інші сайти&quot;&nbsp;side section&nbsp;and click on the &quot;Конституційний Суд&nbsp;України&quot; link</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The start page of the &quot;Конституційний Суд України&quot;&nbsp;website is displayed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Go to the &quot;Державні та інші сайти&quot;&nbsp;side section&nbsp;and click on the &quot;Депо Гречани&quot; link</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The start page of the &quot;Депо Гречани&quot;&nbsp;website is displayed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Go to the &quot;Державні та інші сайти&quot;&nbsp;side section&nbsp;and click on the &quot;Хмельницька міська рада&quot; link</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The start page of the &quot;Хмельницька міська рада&quot;&nbsp;website is displayed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="8134" name="Checking the &quot;Статистика&quot; section functionality">
+	<node_order><![CDATA[1024]]></node_order>
+	<externalid><![CDATA[773]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Current test case verifies the &quot;Статистика&quot; section functionality on the https://trolley.org.ua/ website.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The page https://trolley.org.ua/&nbsp;is loaded</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Go to the side section &quot;Статистика&quot; and check whether the information on visitor statistics is displayed</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The information on visitor statistics is displayed as follows:</p>
+
+<p><img alt="" src="https://i.ibb.co/N6DXrhQ/startpage-stats.png" /></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="8151" name="Checking the news links transition on the start page">
+	<node_order><![CDATA[1025]]></node_order>
+	<externalid><![CDATA[775]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Current test case checks whether the news links on the start page are working properly&nbsp;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The start page https://trolley.org.ua/&nbsp;is loaded</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Детальніше...&quot; button of the message entitled&nbsp;&quot;До уваги хмельничан! 24 листопада у мікрорайоні Гречани тимчасово не курсуватимуть тролейбуси&quot;</p>
+
+<p><img alt="" src="https://i.ibb.co/8X045pd/news.png" /></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>New page with the entire message is opened.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Repeat step 1 with the rest of the news on the start page</p>
+
+<p><img alt="" src="https://i.ibb.co/4mFpgsF/other-messages.png" /></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Each time new page with the corresponding message opens.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="8163" name="Checking the banners &quot;zakupki.prom.ua&quot; and &quot;GPS DozoR City&quot;">
+	<node_order><![CDATA[1026]]></node_order>
+	<externalid><![CDATA[777]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Current test case verifies the functionality of the start page banners&nbsp;&quot;zakupki.prom.ua&quot; and &quot;GPS DozoR City&quot;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The start page https://trolley.org.ua/&nbsp;is loaded</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Go to the left side section and click on the banner&nbsp;&quot;zakupki.prom.ua&quot;</p>
+
+<p><img alt="" src="https://i.ibb.co/z5QcFnm/start-page-zakupki.png" /></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The start page http://zakupki.prom.ua is loaded</p>
+
+<p><img alt="" src="https://i.ibb.co/jwkjFyM/zakupki.png" /></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Click on the banner&nbsp;&quot;GPS DozoR City&quot; below:</p>
+
+<p><img alt="" src="https://i.ibb.co/1srfz6X/start-page-dozor.png" /></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The start page&nbsp;https://city.dozor.tech/ is loaded:</p>
+
+<p><img alt="" src="https://i.ibb.co/Gd8wT25/dozor.png" /></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="8181" name="Print version feature of the news messages">
+	<node_order><![CDATA[1027]]></node_order>
+	<externalid><![CDATA[780]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Current test case checks print version feature of the news messages on the http://trolley.org.ua website</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The start page https://trolley.org.ua/&nbsp;is loaded</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Версія для друку&quot; link of the news message: &quot;До уваги хмельничан! 24 листопада у мікрорайоні Гречани тимчасово не курсуватимуть тролейбуси&quot;</p>
+
+<p><img alt="" src="https://i.ibb.co/mHCwg8r/start-page.png" /></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>A new window with a print version of the news message is opened</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Repeat step 1 with the rest of the news messages on the start page</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Each time new page with the print version of the corresponding message opens.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="8200" name="The functioning of the &quot;Форум&quot; button">
+	<node_order><![CDATA[1028]]></node_order>
+	<externalid><![CDATA[783]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Current test case checks if the &quot;Форум&quot; button is functioning properly on the&nbsp;https://trolley.org.ua/ website</p>
+]]></summary>
+	<preconditions><![CDATA[<p>1. Go to the start page https://trolley.org.ua/</p>
+
+<p>2. Click on the &quot;Історія розвитку&quot; link in the &quot;Навігація&quot; section.</p>
+
+<p>The page&nbsp;&quot;Історія розвитку&quot; is loaded:</p>
+
+<p><img alt="" src="https://i.ibb.co/9WRNv7S/hist.png" /></p>
+
+<p>&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Форум&quot; button in the header:</p>
+
+<p><img alt="" src="https://i.ibb.co/TbtfWhx/hist-outl.png" /></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The letters receive a black outline on mouse hover.</p>
+
+<p>The page&nbsp;https://forum.trolley.org.ua/ opens in new window and contains the forum topics.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="8203" name="Checking the newsletter subscription on the https://winetime.com.ua/ website">
+	<node_order><![CDATA[1029]]></node_order>
+	<externalid><![CDATA[784]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Current test case checks the functioning of the&nbsp;newsletter subscription on the https://winetime.com.ua/ website</p>
+]]></summary>
+	<preconditions><![CDATA[<ol>
+	<li>The https://winetime.com.ua/ website is loaded.</li>
+	<li>Go to the footer and click on the &quot;Контакты&quot; link</li>
+</ol>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Go to the &quot;Вино и письма&quot; section and type the email &quot;scrumpy@i.ua&quot;&nbsp;into the &quot;Эл. почта&quot; field&nbsp;</p>
+
+<p><img alt="" src="https://i.ibb.co/9pZQ5Sd/subs.png" /></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The field accepted entered data</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Click on the button with an arrow to confirm</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The message of successful subscription is displayed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="8207" name="Checking the decimals in total order amount of the shopping cart">
+	<node_order><![CDATA[1030]]></node_order>
+	<externalid><![CDATA[785]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Current test case checks if the total order amount decimals are correctly displayed in the shopping cart</p>
+]]></summary>
+	<preconditions><![CDATA[<ul>
+	<li>The start page https://winetime.com.ua/ is loaded</li>
+	<li>Add the &quot;яблочно-морковный Коник&quot; (1 item) to the shopping cart</li>
+	<li>Add the &quot;Blanche de Bruxelles&quot; (1 item) to the shopping cart</li>
+	<li>Add the &quot;Сыр Fol Epi&nbsp;(Под заказ)&quot; (16 items) to the shopping cart</li>
+</ul>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Go to the shopping cart and check if the total amount is displayed with two decimals.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The total amount is displayed with two decimals:</p>
+
+<p><img alt="" src="https://i.ibb.co/4YyMp6T/cart-or.png" /></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="8250" name="Checking the public offer link in the footer">
+	<node_order><![CDATA[1031]]></node_order>
+	<externalid><![CDATA[793]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Current test case verifies whether the public offer link in the &quot;Суші&quot; section works&nbsp;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The page&nbsp;https://winetime.com.ua/ is loaded</p>
+
+<p>Click on the &quot;Суші&quot; section in the header:</p>
+
+<p><img alt="" src="https://i.ibb.co/pnjWHY0/start.png" style="height:336px; width:640px" /></p>
+
+<p>You will be&nbsp;redirected to&nbsp;https://fish.winetime.com.ua/. The site is opened as follows:</p>
+
+<p><img alt="" src="https://i.ibb.co/xhw95TL/fish.png" style="height:375px; width:640px" /></p>
+
+<p>&nbsp;</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Go to the footer and click on the &quot;Договір Оферта&quot; link</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>New page with the &quot;Договір Оферта&quot; is opened.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="8325" name="Incorrect email input when subscribing to newsletter on the &quot;salon-astoria.com&quot; website">
+	<node_order><![CDATA[1032]]></node_order>
+	<externalid><![CDATA[811]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Current test case verifies&nbsp;whether the system accepts incorrect email when subscribing to newsletter on the&nbsp;https://salon-astoria.com/ website.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The start page https://salon-astoria.com/&nbsp;is loaded.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Go to the footer of the page and click on the &quot;ПОДПИСАТЬСЯ НА НОВОСТИ&quot;</p>
+
+<p><img alt="" src="https://i.ibb.co/Zc2sV0c/link.png" /></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>A pop-up window for the subscription&nbsp;appeared:</p>
+
+<p><img alt="" src="https://i.ibb.co/cg7zj6G/pop-up.png" /></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;EMAIL&quot; field and enter the incorrect&nbsp;email: &quot;test@mail&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The field accepted entered data</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Подписаться&quot; button</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>New pop-up window with the message of the incorrect email address appeared.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="8582" name="Checking the &quot;ЖЖУК-Сервіс&quot; link functionality">
+	<node_order><![CDATA[1033]]></node_order>
+	<externalid><![CDATA[870]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Current test case checks if the&nbsp;&quot;ЖЖУК-Сервіс&quot; link opens an approrpiate page on the&nbsp;http://zhuk.mobi/ website</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The page&nbsp;http://zhuk.mobi/ is loaded</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Go to header and click on the&nbsp;&quot;ЖЖУК-Сервіс&quot; button</p>
+
+<p><img alt="" src="https://i.ibb.co/LnzZHsm/button.png" /></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The corresponding page containing the information on service&nbsp;and repair is opened</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="8589" name="Checking if the price of the boots is correctly displayed">
+	<node_order><![CDATA[1034]]></node_order>
+	<externalid><![CDATA[872]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Current test case checks whether the the price for the children boots is correctly displayed</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Go to the&nbsp;https://litma.com.ua/</p>
+
+<p>Click on the &quot;ДИТЯЧЕ&quot; button in the header.</p>
+
+<p>Then click on the &quot;ПЕРЕГЛЯНУТИ&quot; of the &quot;ГУМОВІ ЧОБІТКИ 23-26&quot; section.</p>
+
+<p>The following page opens:</p>
+
+<p><img alt="" src="https://i.ibb.co/dPBKWsf/boots.png" /></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Scroll down the page and check if the price is set for all of the items.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The price is set for all of the items on the page</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="8599" name="Creating account with incorrect credentials">
+	<node_order><![CDATA[1035]]></node_order>
+	<externalid><![CDATA[875]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Current test case checks the possibility of creating an account with incorrect phone number and email</p>
+]]></summary>
+	<preconditions><![CDATA[<p>Go to the&nbsp;https://litma.com.ua/</p>
+
+<p>Click on the account icon on the top-right:</p>
+
+<p><img alt="" src="https://i.ibb.co/3TtB8Yz/start.png" /></p>
+
+<p>The following page is opened. Click on the &quot;Реєстрація&quot; button</p>
+
+<p><img alt="" src="https://i.ibb.co/t8K9PJF/reg-step.png" /></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Ім&#39;я&quot; field and type &quot;test&quot;</p>
+
+<p><img alt="" src="https://i.ibb.co/GxPDw6h/blank-fields.png" /></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The field accepted entered data</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Прізвище&quot; field and type &quot;test&quot; and leave &quot;Роздріб&quot; field unchanged.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The field accepted entered data</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Телефон&quot; field and type the following number: 000-000-00-00</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The field accepted entered data</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Email&quot; field and type &quot;test@test&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The field accepted entered data</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Пароль&quot; field and type &quot;Password1234&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The field accepted entered data</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;ЗАРЕЄСТРУВАТИСЬ&quot; button below</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The system declined the registration with a message that&nbsp;the phone number and the email fields contain&nbsp;incorrect&nbsp;data</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="8787" name="Leaving a feedback on the website without entering the email">
+	<node_order><![CDATA[1036]]></node_order>
+	<externalid><![CDATA[916]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Current test case checks if the system will accept the email field blank when leaving a feedback</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The page&nbsp;https://litma.com.ua/ is opened</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Відгуки&quot; button in the header</p>
+
+<p><img alt="" src="https://i.ibb.co/x5kNfQv/testimonials.png" /></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The letters of the button turn into green on mouse hover.</p>
+
+<p>The page &quot;Відгуки&quot; is opened</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Go to the &quot;Залишити відгук&quot; section and type &quot;Олександр&quot; in the &quot;Ім&#39;я&quot; field</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The field accepted entered data</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Leave the email field blank and tick the fifth star on the stars&nbsp;icon</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The stars turn into green on mouse hover. The star was selected.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Enter the following message in the &quot;Повідомлення&quot; field: &quot;Взуття дуже сподобалось. Наступного разу обов&#39;язково замовлю ще раз&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The field accepted entered data</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Відправити&quot; button below</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The system did not send the message showing that the email field must contain&nbsp;an email address</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="8794" name="Checking the shop location functionality on &quot;Адреси наших магазинів&quot; page">
+	<node_order><![CDATA[1037]]></node_order>
+	<externalid><![CDATA[917]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>The test case checks if the &quot;Адреси наших магазинів&quot; page displays the shop&nbsp;location correctly&nbsp;</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The page&nbsp;https://shik.ua/ is loaded</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Click on the&nbsp;&quot;Адреси наших магазинів&quot; link in the footer&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>A page with the shop location and the Google map is opened</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Click on the city &quot;Київ&quot; on the left&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The map with exact shop location in Kyiv is opened</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Click on the city &quot;Вінниця&quot; on the left&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The map with exact shop location in Vinnytsia&nbsp;is opened</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Click on the city &quot;Тернопіль&quot; on the left</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The map with exact shop location in Ternopil is opened</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="8941" name="Checking the link &quot;Перелік послуг&quot; functionality in the header menu">
+	<node_order><![CDATA[1038]]></node_order>
+	<externalid><![CDATA[946]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>The&nbsp;test case checks if the header menu link &quot;Перелік послуг&quot; is working properly on the&nbsp;https://hoe.com.ua/ website</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The page https://hoe.com.ua/ is loaded</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Go to the header and hover on the &quot;Товари, послуги&quot; menu:</p>
+
+<p><img alt="" src="https://i.ibb.co/gTSSB1L/header.png" /></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The dropdown menu appears on mouse hover</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Перелік послуг&quot; link from the dropdown menu</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The page describing the service list is opened</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="8948" name="Checking the language switching slider in the header">
+	<node_order><![CDATA[1039]]></node_order>
+	<externalid><![CDATA[948]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>The test case checks whether the graphic slider moves to English when switching the language on the&nbsp;https://hoe.com.ua/ website</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The page&nbsp;https://hoe.com.ua/ is loaded</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Go to header and switch the interface language to English</p>
+
+<p><img alt="" src="https://i.ibb.co/r2mCw5H/start.png" /></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The link&nbsp;turns into orange on mouse hover.</p>
+
+<p>The graphic slider moved towards &quot;Eng&quot;.</p>
+
+<p>The&nbsp;interface language is switched to English.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="8959" name="Checking the &quot;Поповнення&quot; button functionality after recharging the account">
+	<node_order><![CDATA[1040]]></node_order>
+	<externalid><![CDATA[950]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>The test case checks if the&nbsp;&quot;Поповнення&quot; button works in the window that comes after the account recharge on the&nbsp;https://kyivstar.ua/ website</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The page&nbsp;https://kyivstar.ua/ is loaded.</p>
+
+<p>Go to the header and click on the&nbsp;&quot;Поповнення&quot; button.</p>
+
+<p>Enter valid mobile number or the account number to recharge.</p>
+
+<p>Enter the amount for a recharge.</p>
+
+<p>Enter valid credit card number, validity date and CVV2 code in the corresponding fields.</p>
+
+<p>Click on the &quot;Поповнити&quot; button below.</p>
+
+<p>Enter the security code sent in the SMS.</p>
+
+<p>Confirm the code entered.</p>
+
+<p>The page with a successful recharge is displayed.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Go to the header and click on the&nbsp;&quot;Поповнення&quot; button on the right:</p>
+
+<p><img alt="" src="https://i.ibb.co/rGGmKKJ/recharge.png" /></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The recharge page is opened:</p>
+
+<p><img alt="" src="https://i.ibb.co/F5dVRBG/rech.png" /></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="8971" name="Checking the &quot;Події&quot; link functionality in the header menu">
+	<node_order><![CDATA[1041]]></node_order>
+	<externalid><![CDATA[953]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>The test case checks if the &quot;Події&quot;&nbsp;link in the header menu is valid on the&nbsp;https://km.ukravtodor.gov.ua/ website</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The page&nbsp;https://km.ukravtodor.gov.ua/ is loaded.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Go to the header and click on the &quot;Прес-центр&quot; menu</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The &quot;Прес-центр&quot; menu is highlighted in blue on mouse hover.</p>
+
+<p>A dropdown menu is opened:</p>
+
+<p><img alt="" src="https://i.ibb.co/Ry5qV58/press.png" /></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Click on&nbsp;the &quot;Події&quot;&nbsp;link</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The page dedicated to the&nbsp;&quot;Події&quot; topic is opened.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="8995" name="Checking the validity of the links in the footer on https://partner-tour.com/">
+	<node_order><![CDATA[1042]]></node_order>
+	<externalid><![CDATA[959]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Test case verifies whether all the links in the footer are valid on the&nbsp;https://partner-tour.com/ website</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The page&nbsp;https://partner-tour.com/ is opened</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Go to the footer and click on the &quot;Календар турів&quot; link</p>
+
+<p><img alt="" src="https://i.ibb.co/2k5HtPN/footer.png" /></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The link changes its colour to orange on mouse hover.</p>
+
+<p>The page concerning&nbsp;&quot;Календар турів&quot; is opened.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Repeat step 1 for the rest of the links:</p>
+
+<ul>
+	<li>Прокат спорядження</li>
+	<li>Туристам</li>
+	<li>Блог</li>
+	<li>Відгуки</li>
+	<li>Про нас</li>
+	<li>Контакти</li>
+	<li>Пошук турів</li>
+	<li>Квитки Авіа / Потяг / Автобус</li>
+	<li>Фотогалерея</li>
+	<li>Подарунковий сертифікат</li>
+	<li>Система знижок</li>
+</ul>
+]]></actions>
+	<expectedresults><![CDATA[<p>After clicking on the link, the corresponding page opens containing the information on the topic.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="9008" name="Creating an account on the https://zolotoyvek.ua/ website">
+	<node_order><![CDATA[1043]]></node_order>
+	<externalid><![CDATA[961]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Test case verifies the possibility to create an account on the&nbsp;https://zolotoyvek.ua/ website.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The page https://zolotoyvek.ua/ is loaded.</p>
+
+<p>User is not registered.&nbsp;No user should be logged in.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Go to the header and click on the account icon on the right:</p>
+
+<p><img alt="" src="https://i.ibb.co/cXg9w7Q/account-icon.png" /></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>A pop-up window for login/registration is opened</p>
+
+<p><img alt="" src="https://i.ibb.co/s3L6QZb/account.png" /></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Go to the bottom and click on the &quot;Реєстрація&quot; button</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>A new pop-up page for the registration is opened:</p>
+
+<p><img alt="" src="https://i.ibb.co/GtyZjDG/reg.png" /></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Type &quot;test&quot; in the &quot;Ім&#39;я&quot; field</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The field accepted entered data</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Type &quot;test&quot; in the &quot;Прізвище&quot; field</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The field accepted entered data</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Enter &quot;scrumpy@i.ua&quot; in the &quot;Email&quot; field</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The field accepted entered data</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Enter the password &quot;Testpassword1234*&quot; and re-enter it in the field below</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>Both fields accepted entered data</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>Check the &quot;Запам&#39;ятати мене&quot; checkbox</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The checkbox was checked</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[8]]></step_number>
+	<actions><![CDATA[<p>Check the reCAPTCHA box</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>reCAPTCHA verification successfully passed</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[9]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Створити акаунт&quot; button</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>A message with a successful account creation appeared&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="9080" name="Checking the &quot;Отзывы&quot; link validity on the https://detailcar.com.ua/ website">
+	<node_order><![CDATA[1044]]></node_order>
+	<externalid><![CDATA[976]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Current test case checks if the&nbsp;&quot;Отзывы&quot; link opens an appropriate page on the&nbsp;https://detailcar.com.ua/ website</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The page&nbsp;https://detailcar.com.ua/ is loaded</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Go to the footer and click on the&nbsp;&quot;Отзывы&quot; link</p>
+
+<p><img alt="" src="https://i.ibb.co/ZHSk5gx/otzyvy.png" /></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The &quot;Отзывы&quot; link turns into green on mouse hover.</p>
+
+<p>The corresponding page containing the testimonials&nbsp;is opened</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="9083" name="Checkout with incorrect phone number">
+	<node_order><![CDATA[1045]]></node_order>
+	<externalid><![CDATA[977]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Test case checks whether it is possible to checkout with an incorrect phone number on the https://jabko.ua/ website.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The page&nbsp;https://jabko.ua/ is loaded</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Go to the header and click on the &quot;б/у Apple&quot; button:</p>
+
+<p>&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>A page with used phones opened.&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Hover on the &quot;б/у iPhone 11 Pro 64GB&quot; item</p>
+
+<p><img alt="" src="https://i.ibb.co/WHjWvyN/hover.png" /></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>&quot;Швидка покупка&quot; and &quot;Купити&quot; menu appeared.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Купити&quot; button:</p>
+
+<p><img alt="" src="https://i.ibb.co/LnQ4dPG/select.png" style="height:396px; width:639px" /></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>A checkout page opened.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Enter &quot;test&quot; in the &quot;Ім&#39;я&quot; field</p>
+
+<p>Enter &quot;000-000-00-00&quot; in the &quot;Телефон&quot; field</p>
+
+<p>Leave the email field empty</p>
+
+<p>&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The fields accepted entered data.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>In the &quot;Доставка і оплата&quot; section:</p>
+
+<p>Select &quot;Самовивіз із магазину&quot;</p>
+
+<p>Select &quot;Вінниця&quot;</p>
+
+<p>Select &quot;ТРЦ Скай Парк&quot;</p>
+
+<p>Select &quot;Оплата готівкою&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The corresponding parameters were successfully selected</p>
+
+<p><img alt="" src="https://i.ibb.co/ckH6KHx/order.png" /></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Оформити замовлення&quot; button</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>An error concerning incorrect phone number input appeared. Checkout is not completed.</p>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="9231" name="Checking the registration link functionality on the https://www.oboibum.com.ua/ website">
+	<node_order><![CDATA[1046]]></node_order>
+	<externalid><![CDATA[1010]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Test case checks whether the registration link opens a page with corresponding registration fields on the&nbsp;https://www.oboibum.com.ua/ website.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The page&nbsp;https://www.oboibum.com.ua/ is loaded</p>
+
+<p>User is not registered.&nbsp;No user should be logged in.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Go to the header and click on the &quot;Войти&quot; link</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The link turns into red on mouse hover.</p>
+
+<p>A &quot;Мой аккаунт&quot; page is loaded containing login&nbsp;fields and a registration link.&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Регистрация&quot; link.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The registration page is loaded containing the corresponding registration fields.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="9236" name="Checking the localization functionality of the https://mbocharova.com.ua/ website">
+	<node_order><![CDATA[1047]]></node_order>
+	<externalid><![CDATA[1011]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Test case verifies whether the localization to Ukrainian is functioning on the&nbsp;https://mbocharova.com.ua/ website.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The page&nbsp;https://mbocharova.com.ua/ is loaded</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Go to the header and click&nbsp;on the &quot;Укр&quot; link.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The link is underlined on mouse hover.</p>
+
+<p>The website changed the display language to Ukrainian.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="9239" name="Checking the subsidiaries location of the http://cukiernia.com.ua/ website">
+	<node_order><![CDATA[1048]]></node_order>
+	<externalid><![CDATA[1012]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Test case checks the&nbsp;subsidiaries location on the &quot;Контакти&quot; link&nbsp;of the http://cukiernia.com.ua/ website.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The page&nbsp;http://cukiernia.com.ua/ is loaded.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Go to the header and click on the &quot;Контакти&quot; button.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The button changed its color to red on mouse hover.</p>
+
+<p>The page &quot;Контакти&quot; is opened.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Go to the L&#39;viv subsidiary and theck the map location.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The map is showing 3 Staroyevreys&#39;ka street location</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Go to the Khmel&#39;nyts&#39;kyy subsidiary and theck the map location.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The map is showing 45 Proskurivs&#39;ka street location</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Go to the Ivano-Frankivs&#39;k subsidiary and theck the map location.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The map is showing 12 Nezalezhnosti&nbsp;street location</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Go to the Vinnytsia&nbsp;subsidiary and theck the map location.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The map is showing 28 Hrushevs&#39;koho&nbsp;street location</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="9251" name="Subscribing to a newsletter with an incorrect email">
+	<node_order><![CDATA[1049]]></node_order>
+	<externalid><![CDATA[1014]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Test case checks whether it is possible to subscribe to a newsletter with an incorrect email on the&nbsp;https://www.atbmarket.com/uk website</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The page&nbsp;https://www.atbmarket.com/uk is loaded</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Go to the bottom to the &quot;ПІДПИШІТЬСЯ НА РОЗСИЛКУ&quot; section.</p>
+
+<p>Enter an incorrect email &quot;test@mailserver&quot; in the corresponding field:&nbsp;</p>
+
+<p><img alt="" src="https://i.ibb.co/bs4B2xZ/enter-email.png" /></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The field accepted entered data</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Підписатися&quot; button</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>You will be transferred to a new page where previously written&nbsp;email is in the email field:</p>
+
+<p><img alt="" src="https://i.ibb.co/nBMbxpY/subs.png" /></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Type &quot;test&quot; in the &quot;Ваше ім&#39;я&quot; field</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The field aacepted entered data</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Type &quot;test&quot; in the &quot;Ваше прізвище&quot; field</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The field accepted entered data</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;НАДІСЛАТИ&quot; button below</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The button becomes dark-grey on mouse hover.</p>
+
+<p>A message of incorrectly written&nbsp;email is displayed.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="9282" name="Website registration with incorrect phone number">
+	<node_order><![CDATA[1050]]></node_order>
+	<externalid><![CDATA[1021]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Test case checks whether it is possible to register with an incorrect phone number on the&nbsp;https://megasport.ua/ website</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The page&nbsp;https://megasport.ua/ is loaded</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Go to the header and click on the login icon:</p>
+
+<p><img alt="" src="https://i.ibb.co/NFwQ8N8/login-icon.png" style="height:385px; width:640px" /></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>A page &quot;Вхід / реєстрація&quot; is loaded:</p>
+
+<p><img alt="" src="https://i.ibb.co/zHQVySB/login.png" /></p>
+
+<p><img alt="" src="&lt;a href=&quot;https://ibb.co/K2gNRFy&quot;&gt;&lt;img src=&quot;https://i.ibb.co/y6ChGWs/login.png&quot; alt=&quot;login&quot; border=&quot;0&quot;&gt;&lt;/a&gt;" /></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Type the number &quot;(000) 000 00 00&quot; in the &quot;Мобільний телефон&quot; field</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The field accepted entered data</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;УВІЙТИ&quot; button</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The button turns into dark-orange on mouse hover.</p>
+
+<p>The message appears that the phone number is entered incorrectly.&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="9307" name="Website registration when the email is optional">
+	<node_order><![CDATA[1051]]></node_order>
+	<externalid><![CDATA[1027]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Test case checks website registration without entering an email (email is optional) on the&nbsp;https://fishunter.com.ua/</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The page&nbsp;https://fishunter.com.ua/ is loaded</p>
+
+<p>User is not registered.&nbsp;No user should be logged in.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Go to the header and click on the &quot;Личный кабинет&quot; link:</p>
+
+<p><img alt="" src="https://i.ibb.co/vB6MgmP/login-link.png" /></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>A dropdown menu appeared:</p>
+
+<p><img alt="" src="https://i.ibb.co/bBRHBgm/pop-up.png" /></p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Регистрация&quot; link from the dropdown menu</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The link turns into orange on mouse hover.</p>
+
+<p>A page with a registration fields is opened.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>In the &quot;Имя&quot; field enter &quot;test&quot;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The field accepted entered data</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>In the &quot;Фамилия&quot; field enter &quot;test&quot;.</p>
+
+<p>As the email field is&nbsp;optional, leave it empty.</p>
+
+<p><img alt="" src="https://i.ibb.co/3051dbL/reg.png" /></p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The field accepted entered data</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Enter &quot;050-123-45-67&quot; in the &quot;Телефон&quot; field</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The field accepted entered data</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>Enter &quot;12345678&quot; in the &quot;Пароль&quot; and &quot;Подтвердите пароль&quot; fields.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The fields accepted entered data</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[7]]></step_number>
+	<actions><![CDATA[<p>Click on the &quot;Продолжить&quot; button</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The page with a successful registration is opened.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+
+<testcase internalid="9322" name="Checking the localization functionality of the https://fishunter.com.ua/ website">
+	<node_order><![CDATA[1052]]></node_order>
+	<externalid><![CDATA[1030]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>Test case verifies whether the localization to Ukrainian is functioning on the&nbsp;https://fishunter.com.ua/&nbsp;website.</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The page&nbsp;https://fishunter.com.ua/ is loaded</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Go to the header and click&nbsp;on the &quot;Укр&quot; button.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>The button turned to orange&nbsp;on mouse hover.</p>
+
+<p>The website changed the display language to Ukrainian.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+</testcase>
+</testsuite>
